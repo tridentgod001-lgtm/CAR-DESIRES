@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Releases - Neon Cars</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #05050a;
+        font-family: 'Orbitron', sans-serif;
+        color: #fff;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .neon-title {
+        font-size: 4rem;
+        color: #00eaff;
+        text-shadow: 
+            0 0 10px #00eaff,
+            0 0 20px #00eaff,
+            0 0 40px #00eaff;
+    }
+
+    .sub-text {
+        color: #ff00ff;
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    .releases-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .car-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        transition: 0.3s ease;
+        box-shadow: 0 0 10px #00ffff55;
+    }
+
+    .car-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 
+            0 0 20px #00ffffaa, 
+            0 0 40px #ff00ff55;
+    }
+
+    .car-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .car-card h2 {
+        color: #00eaff;
+        text-shadow: 0 0 10px #00eaffaa;
+    }
+
+    .car-card p {
+        font-size: 0.9rem;
+        color: #ccccff;
+        margin: 10px 0 20px;
+    }
+
+    .btn {
+        background: #ff00ff;
+        border: none;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        text-shadow: 0 0 5px #fff;
+    }
+
+    .btn:hover {
+        background: #00eaff;
+        box-shadow: 
+            0 0 15px #00eaff,
+            0 0 30px #00eaff;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="neon-title">🔥 New Releases</h1>
+    <p class="sub-text">Latest Car Launches & Updates</p>
+</header>
+
+<section class="releases-container">
+
+    <div class="car-card">
+        <img src="car5.jpg" alt="Mustang">
+        <h2>2025 Mustang GT Neon Edition</h2>
+        <p>Turbocharged V8 with neon underglow kit and futuristic HUD.</p>
+     <button class="btn"><a href="https://www.carwale.com/used/dehradun/ford-mustang/rprkmq2a/">View Details</a></button>
+    </div>
+
+    <div class="car-card">
+        <img src="car11.jpeg" alt="Tesla">
+        <h2>Tesla Model X HyperGlow</h2>
+        <p>Electric monster with adaptive neon lights & auto-drive v3.0.</p>
+        <button class="btn"><a href="https://www.cardekho.com/tesla/model-x">View Details</a></button>
+    </div>
+
+    <div class="car-card">
+        <img src="car12.jpeg" alt="GTR">
+        <h2>Nissan GTR <br>NightFury</br></h2>
+        <p>Twin-turbo beast with neon carbon-fiber body kit.</p>
+        <button class="btn"><a href="https://www.carwale.com/nissan-cars/gtr/">View Details</a></button>
+    </div>
+
+</section>
+
+</body>
+</html>

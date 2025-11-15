@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Cars - Neon Theme</title>
+
+    <style>
+        body {
+            background: #050505;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-rated-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: #00fff2;
+            text-shadow: 0 0 15px #00fff2, 0 0 30px #00fff2;
+            margin-bottom: 40px;
+        }
+
+        .car-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .car-card {
+            background: #111;
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            text-align: center;
+            transition: 0.3s ease;
+            border: 1px solid #0ff;
+        }
+
+        .car-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+        }
+
+        .car-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .car-card h2 {
+            font-size: 1.6rem;
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+        }
+
+        .car-card p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #00eaff;
+            border: none;
+            padding: 10px 20px;
+            color: #000;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #fff;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #0ff;
+            box-shadow: 0 0 15px #0ff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="top-rated-section">
+        <h1 class="section-title">🔥 Top Rated Cars</h1>
+        <div class="car-container">
+
+            <!-- Car Card 1 -->
+            <div class="car-card">
+                <img src="car5.jpg" alt="Car 1">
+                <h2>Mustang GT</h2>
+                <p>Rating ⭐⭐⭐⭐⭐</p>
+               <button class="btn"><a href="https://www.carwale.com/ford-cars/mustang/">View Details</a></button> 
+            </div>
+
+            <!-- Car Card 2 -->
+            <div class="car-card">
+                <img src="car12.jpeg" alt="Car 2">
+                <h2>Nissan GTR</h2>
+                <p>Rating ⭐⭐⭐⭐⭐</p>
+            <button class="btn"><a href="https://www.carwale.com/nissan-cars/gtr/">View Details</a></button>
+            </div>
+
+            <!-- Car Card 3 -->
+            <div class="car-card">
+                <img src="car1.jpeg" alt="Car 3">
+                <h2><br>BMW M4</br></h2>
+                <p>Rating ⭐⭐⭐⭐☆</p>
+                <button class="btn"><a href="https://www.carwale.com/bmw-cars/m4/">View Details</a></button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

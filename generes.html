@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Genres - Neon Theme</title>
+
+    <style>
+        body {
+            background: #050505;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .genres-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: #00eaff;
+            text-shadow: 0 0 15px #00eaff, 0 0 30px #00eaff;
+            margin-bottom: 40px;
+        }
+
+        .genre-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .genre-card {
+            background: #111;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            text-align: center;
+            transition: 0.3s ease;
+            border: 1px solid #0ff;
+        }
+
+        .genre-card:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+        }
+
+        .genre-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .genre-card h2 {
+            font-size: 1.5rem;
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+        }
+
+        .genre-card p {
+            margin-top: 5px;
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="genres-section">
+        <h1 class="section-title">🚘 Car Genres</h1>
+        <div class="genre-container">
+
+            <!-- Genre 1 -->
+            <div class="genre-card">
+                <img src="car9.jpeg" alt="Supercars">
+                <h2>Supercars</h2>
+                <p>High performance, extreme power, futuristic speed.</p>
+            </div>
+
+            <!-- Genre 2 -->
+            <div class="genre-card">
+                <img src="car.jpeg" alt="SUVs">
+                <h2>SUVs</h2>
+                <p>Comfort, space and strong off-road capability.</p>
+            </div>
+
+            <!-- Genre 3 -->
+            <div class="genre-card">
+                <img src="car15.jpeg" alt="Muscle Cars">
+                <h2>Muscle Cars</h2>
+                <p>American power with bold looks and roaring engines.</p>
+            </div>
+
+            <!-- Genre 4 -->
+            <div class="genre-card">
+                <img src="car11.jpeg" alt="Electric Cars">
+                <h2>EV Cars</h2>
+                <p>Silent, futuristic and eco-friendly electric performance.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
