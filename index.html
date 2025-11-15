@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelverse - Your Gaming Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #111, #000); /* Dark gradient background */
+            color: #eee;
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(4px) brightness(0.6); /* Subtle blur and darken */
+        }
+
+        header {
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1 {
+            
+            font-size: 5em;
+            color: #0ff; /* Neon blue */
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; /* Glow effect */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1.5em; /* Increased spacing */
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #0f0; /* Green hover */
+            text-shadow: 0 0 5px #0f0;
+        }
+
+        .videocontainer{
+            position: relative;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .videocontainer video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+      
+        }
+
+        .feature-cards {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      flex-wrap: wrap;
+      animation: fadeInUp 2.5s ease-out;
+      overflow: scroll;
+        }
+    .card {
+      background-color: #333;
+      width: 280px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 15px 40px  #ff00ff;
+    }
+
+    .card img {
+     height: 80%;
+     width: 80%;
+     object-fit: cover;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+   .glow {
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+
+    font-size: x-large;
+
+   }
+           div a:hover {
+            color:  #0ff; /* Green hover */
+            text-shadow: 0 0 5px  #0ff; }
+
+            div a:visited {
+            color:  #0ff; /* Green hover */
+            text-shadow: 0 0 5px  #0ff;}
+
+
+            div a:active {
+            color: #0f0; /* Green hover */
+            text-shadow: 0 0 5px  #0f0;}
+
+            div a:link {
+            color: #ffff00; /* Green hover */
+            text-shadow: 0 0 5px  ;}
+.moving-car {
+    position: absolute;
+    top: -1px; /* move it up a bit so it’s closer to the text */
+    width: 120px;
+    animation: driveAcross 6s linear infinite;
+    z-index: 10; /* above text */
+}
+
+.moving-car img {
+    width: 120px;
+    filter: drop-shadow(0 0 15px #0ff) drop-shadow(0 0 25px #0ff);
+}
+
+/* Keyframes remain the same */
+@keyframes driveAcross {
+    0% {
+        left: -150px; /* start off screen */
+    }
+    50% {
+        left: 50%;
+        transform: translateX(-50%) rotateY(10deg);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(-100%) rotateY(0deg);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+<header>
+<div class="logo-box">
+    <div class="moving-car">
+        <img src="logo.png" alt="Neon Car Logo">
+    </div>
+    <h1>CAR DESIRE</h1>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="newrelease.html">New Releases</a></li>
+            <li><a href="toprated.html">Top Rated</a></li>
+            <li><a href="generes.html">Genres</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="videocontainer">
+<video autoplay muted loop >
+<source src="v3.mp4" type="video/mp4">
+</video>
+</div>
+<div class="feature-cards">
+    <div class="card">
+        <img src="car.jpeg">
+      <a href="https://www.cardekho.com/carmodels/Toyota/Toyota_Fortuner" target="_blank" class="glow"> Fortuner</a>
+    </div>
+    <div class="card">
+        <img src="car1.jpeg">
+        <a href="https://www.cardekho.com/bmw/m4-competition" target="_blank" class="glow"> BMWM4 competition</a>
+    </div>
+    <div class="card">
+ <img src="car2.jpeg">
+ <a href="https://www.cardekho.com/bmw/m5" target="_blank" class="glow"> BMWM5</a>
+    </div>
+    <div class="card">
+        <img src="car3.jpg">
+        <a href="https://www.cardekho.com/carmodels/Rolls-Royce/Rolls-Royce_Phantom" target="_blank" class="glow"> ROLLS ROYCE</a>
+           </div>
+           <div class="card">
+            <img src="car4.jpeg">
+            <a href="https://www.cardekho.com/carmodels/Porsche/Porsche_911" target="_blank" class="glow"> porsche 911</a>
+               </div>
+               <div class="card">
+                <img src="car5.jpg">
+                <a href="https://www.cardekho.com/overview/Ford_Mustang/Ford_Mustang_GT.htm" target="_blank" class="glow"> Mustang GTR</a>
+                   </div>
+                   <div class="card">
+                    <img src="car6.jpg">
+                    <a href="https://en.wikipedia.org/wiki/Formula_One_car" target="_blank" class="glow"> Formula 1 </a>
+                       </div>
+                       <div class="card">
+                        <img src="car7.jpeg">
+                        <a href="https://www.cardekho.com/mclaren/gt" target="_blank" class="glow">Mclaren</a>
+                           </div>
+                           <div class="card">
+                            <img src="car8.jpeg">
+                            <a href="https://www.cardekho.com/lamborghini/huracan-evo" target="_blank" class="glow"> Lamborghini huracan </a>
+                               </div>
+                               <div class="card">
+                                <img src="car9.jpeg">
+                                <a href="https://www.carwale.com/nissan-cars/gtr/" target="_blank" class="glow"> Nissan GT-R</a>
+                                   </div>
+                                   <div class="card">
+                                <img src="car10.jpg">
+                                <a href="https://www.cardekho.com/bugatti/chiron" target="_blank" class="glow"> Bugati Chiron</a>
+                                   </div>
+            
+                                                                                                                                                                                                           
+                                                                                                                                                                                                        
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                                            
+  
+</div>
+</div>
+</body>
+</html>
